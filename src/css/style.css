@@ -1,0 +1,150 @@
+:root {
+    --blue: #537188;
+    --brown: #CBB279;
+    --dark-white: #E1D4BB;
+    --white: #EEEEEE;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman';
+    background-color: var(--brown);
+}
+
+.nav {
+    background-color: rgba(83, 113, 136, 0.3);
+}
+
+button.btn-hover {
+    background-color: var(--dark-white);
+}
+
+button.btn-hover:hover {
+    background-color: var(--brown);
+}
+
+button.btn-nav {
+    background-color: var(--dark-white);
+    border-radius: 0;
+}
+
+button.btn-nav-left {
+    background-color: var(--dark-white);
+    border-radius: 20px 0px 0px 20px;
+}
+
+button.btn-nav-right {
+    background-color: var(--dark-white);
+    border-radius: 0px 20px 20px 0px;
+}
+
+button.btn-nav:hover {
+    background-color: var(--brown);
+    border-radius: 20px;
+}
+
+.icon {
+    width: 60px;
+}
+
+.main-img {
+    transition: all .2s ease-in-out;
+    width: 500px;
+    border-radius: 20px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.paragraphs {
+    text-align: justify;
+    font-size: large;
+}
+
+.text-col {
+    padding: 20px;
+    background-color: rgba(83, 113, 136, 0.3);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+/*parallax*/
+div.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.parallax-1 {
+    background-image: url(../imgs/img3.jpg);
+}
+
+/* Blur-zoom Container */
+.parallax-2 img {
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1.2);
+}
+
+/* The Transformation */
+.parallax-2:hover img {
+    filter: blur(0);
+    transform: scale(1);
+}
+
+/*Form style*/
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #537188;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: rgb(200, 68, 68);
+    width: 40px;
+}
+
+.footer-text {
+    padding: 20px;
+}

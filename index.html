@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>MAIN PAGE</title>
+</head>
+
+<body>
+    <!--make a site about geologist-->
+    <!--layout (1p) + funcional (1p)-->
+    <!--
+        https://www.careerexplorer.com/careers/geologist/
+        https://mdbootstrap.com/docs/standard/plugins/parallax/
+        https://www.bing.com/search?pglt=641&q=102+css&cvid=7e70106ac6e242ed9c53a3b308c24c46&aqs=edge..69i57j46j0l7.1631j0j1&FORM=ANNTA1&PC=U531
+        
+    -->
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"><img class="icon" src="./src/imgs/icon.png"></a>
+
+            <div class="collapse navbar-collapse">
+                <a href="./src/pages/news.html"><button class="btn btn-nav btn-nav-left">News</button></a> 
+                <a href="./src/pages/profissional.html"><button class="btn btn-nav">The profissional</button></a> 
+                <a href="./src/pages/contacts.html"><button class="btn btn-nav btn-nav-right">Contacts</button></a> 
+            </div>
+
+            <button class="btn btn-hover open-button" onclick="openForm()">Newslatter</button>
+        </div>
+    </nav>
+    <!--Newslatter form-->
+    <!-- The form -->
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+            <h1>Newslatter</h1>
+
+            <label for="email" class="form-label"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" class="form-control" name="email" required>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>
+    </div>
+
+    <!--MAIN CONTENT-->
+    <div class="container-fluid">
+        <div class="row">
+            <!--main image-->
+            <div class="col p-5">
+                <div class="parallax parallax-2 row mx-auto" style="border-radius: 20px;">
+                    <img src="src/imgs/img2.jpg" style="border-radius: 20px;" alt="">
+                </div>
+                <div class="row">
+                    <img src="./src/imgs/animation1.gif" class="mx-auto " style="width: 200px;" alt="">
+                </div>
+            </div>
+
+            <!--right content-->
+            <div class="col">
+                <!--something animated-->
+
+                <!--text-->
+                <div class="row">
+                    <div class="col text-col">
+                        <p class="paragraphs">
+                            Geology is the science that studies the Earth and its history. It investigates the
+                            structure, composition, and evolution of the planet and its natural resources. Geology also
+                            explores the interactions between the Earth and other celestial bodies, such as the Moon and
+                            Mars.
+                            <br>
+                            <br>
+                            Geology is divided into many branches and subdisciplines, depending on the methods and
+                            topics of study. Some of the main branches are mineralogy, petrology, geochemistry,
+                            geophysics, structural geology, stratigraphy, paleontology, geomorphology, and planetary
+                            geology. Each branch applies different techniques and theories to understand various aspects
+                            of the Earth and its environment.
+                            <br>
+                            <br>
+                            Geology is a broad and interdisciplinary field that encompasses many subfields and
+                            specialties. Some of the main subfields are volcanology, paleontology, hydrology,
+                            seismology, geomorphology, and economic geology. Each subfield applies different methods and
+                            theories to study specific aspects of the Earth and its environment23.
+                            <br>
+                            <br>
+                            Geology is a dynamic and exciting field that changes with the forces of nature and human
+                            activities. Geologists use various tools and techniques to observe, measure, analyze, and
+                            interpret the Earth and its phenomena. Geologists also communicate their findings and
+                            implications to other scientists, policy makers, and the public
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax parallax-1">
+        </div>
+
+        <!--footer-->
+        <div class="row">
+            <div class="col">
+                <div class="mx-auto m-5 text-col">
+                    <p class="paragraphs">
+                        is an important field of study that has many applications in society. Geologists work to
+                        understand the history of our planet and predict the behavior of Earth systems and the universe.
+                        They also play a crucial role in finding adequate supplies of natural resources such as ground
+                        water, petroleum, and metals. Geology is essential to locating, extracting, and managing natural
+                        resources; evaluating environmental impacts of using or extracting these resources; as well as
+                        understanding and mitigating the effects of natural hazards. Geology looks at some of the most
+                        important issues in society today including energy sources and sustainability, climate change,
+                        the impacts of developments on the environment, water management, mineral resources and natural
+                        hazards
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
