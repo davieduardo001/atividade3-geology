@@ -75,7 +75,9 @@ button.btn-nav:hover {
     border-radius: 20px;
 }
 
-/*parallax*/
+/*
+    PARALAX
+*/
 div.parallax {
     display: flex;
     flex-direction: column;
@@ -94,6 +96,15 @@ div.parallax-1 {
     background-image: url(../imgs/img3.jpg);
 }
 
+div.parallax-2 {
+    background-image: url(../imgs/img4.jpg);
+}
+
+div.parallax-3 {
+    background-image: url(../imgs/1.png);
+    height: 100px !important;
+}
+
 /* Blur-zoom Container */
 .parallax-2 img {
     transition: transform 1s, filter 2s ease-in-out;
@@ -107,11 +118,9 @@ div.parallax-1 {
     transform: scale(1);
 }
 
-/*Form style*/
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-
-/* The popup form - hidden by default */
+/*
+    POPUP FORM
+*/
 .form-popup {
     display: none;
     position: fixed;
@@ -138,13 +147,71 @@ div.parallax-1 {
     background: #f1f1f1;
 }
 
-
-/* Add a red background color to the cancel button */
 .form-container .cancel {
     background-color: rgb(200, 68, 68);
     width: 40px;
 }
 
+/*
+    FOOTER
+*/
 .footer-text {
     padding: 20px;
+}
+
+.news {
+    border: solid 3px #537188;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.data {
+    font-size: smaller;
+    color: #000;
+}
+
+.header-news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: #CBB279;
+    padding: 20px;
+    text-align: center;
+    border-top: solid 3px #537188;
+    margin-top: 20px;
+}
+
+.icon-footer {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.contact {
+    font-size: 14px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/*
+    CONTACTS PAGE
+*/
+.contacts-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
