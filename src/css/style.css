@@ -27,6 +27,7 @@ button.btn-hover:hover {
 button.btn-nav {
     background-color: var(--dark-white);
     border-radius: 0;
+    border: 1px solid darkolivegreen;
 }
 
 button.btn-nav-left {
@@ -60,7 +61,9 @@ button.btn-nav:hover {
 
 .paragraphs {
     text-align: justify;
-    font-size: large;
+    font-size: larger;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 .text-col {
@@ -134,7 +137,7 @@ div.parallax-3 {
     max-width: 300px;
     padding: 10px;
     border-radius: 20px;
-    background-color: #537188;
+    background-color: #E1D4BB;
 }
 
 /* Full-width input fields */
@@ -150,6 +153,8 @@ div.parallax-3 {
 .form-container .cancel {
     background-color: rgb(200, 68, 68);
     width: 40px;
+    font-size: 10px;
+    color: whitesmoke;
 }
 
 /*
